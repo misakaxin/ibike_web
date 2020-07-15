@@ -1,0 +1,24 @@
+server:  
+    port: 8080
+    servlet: 
+       session.timeout: 60000
+       contextpath: /yc74ibike    
+    undertow:  
+        io-threads: 16  
+        worker-threads: 256  
+        buffer-size: 1024  
+        buffers-per-region: 1024  
+        direct-buffers: true 
+logging:
+    level: 
+        root: error
+        org.springframework: error
+        com.yc: info
+    file: /tmp/yc.log
+swagger: 
+    enabled: true
+ 
+
+
+
+
